@@ -1,7 +1,7 @@
 #################LISTAS####################
-###########################################
+
 my_lista = ['Rojo', 'Azul', 'Amarillo', 'Naranja', 'Violeta', 'Verde']
-#input()
+
 print(my_lista)
 print(type(my_lista))
 print(my_lista[2])
@@ -10,61 +10,57 @@ print("my_lista size: ", len(my_lista))
 print(my_lista[0:2])
 print(my_lista[:2])
 
-my_lista.append('Blanco')      #Agrega elemento al final de la lista
+my_lista.append('Blanco')      
 print(my_lista)
 
 my_lista.insert(3, 'Negro')
 print(my_lista)
 
-
-my_lista.extend(['Marron', 'Gris'])   #Concatena a otra lista
+extend_list = ['Marron','Gris']
+my_lista.extend(extend_list)
 print(my_lista)
 
 print(my_lista.index('Azul'))
 
-#my_lista.remove('Magenta')
+#Añadir y remover elementos de una lista
 my_lista.remove('Marron')
 print(my_lista)
 
 my_lista.insert(8, 'Marron')
 print(my_lista)
 
-print(my_lista.pop())
+print(my_lista.pop()) 
 size = len(my_lista)
 print("size = ", size)
-#print(my_lista.pop(size))
 
+#Multiplicando elementos de la lista
 my_lista_3 = my_lista*3
 print("my_lista_3: ", my_lista_3)
 
+#Ordenando alfabeticamente una lista de cadenas de caracteres
 print("Sort:")
-print()
-my_listaSort = my_lista.sort()
-print(my_listaSort)
+my_lista.sort()
+print(my_lista)
 
+#Ordenando listas numericas de menor a mayor
 my_NumList = [10, 9, 8, 7, 6 , 5 , 4, 3, 2, 1]
 print("Ordering my_NumList: ")
 my_NumList.sort()
 print(my_NumList)
-#OrderedLList = my_NumList.sort()
-#print(my_listaSort)
+
 
 #Ordenando lista de mayor a menor
 my_NumList.sort(reverse = True)
-print("De menor a mayor: ", my_NumList)
+print("De mayor a menor: ", my_NumList)
 
 
 
-#################TUPLAS####################
+################TUPLAS####################
 ###########################################
 # Corresponde a una estructura similar a las listas, la diferencia está
 # en que no se pueden modificar una vez creadas, es decir que son inmutables:
 
 #Convertir una lista a tupla:prin
-print("###########################")
-print("###########################")
-print("###########################")
-print("############TUPLAS#########")
 my_tupla = tuple(my_lista)
 print()
 print()
